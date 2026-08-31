@@ -282,6 +282,26 @@ section { padding: 72px 2rem; }
   padding-bottom: .4rem;
   border-bottom: 1px solid var(--rule);
 }
+.lec-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .7rem; margin-bottom: .5rem;
+}
+.lec-card {
+  padding: .8rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--bg-alt);
+  font-size: .87rem;
+}
+.lec-tag {
+  font-size: .65rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  padding: .1rem .4rem; border-radius: 2px;
+  margin-right: .3rem; margin-bottom: .4rem; display: inline-block;
+}
+.tag-qem { background: #fdecea; color: #c0392b; }
+.lec-title { font-weight: 600; color: var(--ink); line-height: 1.45; margin-bottom: .15rem; }
+.lec-link { font-size: .78rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+.lec-link:hover { text-decoration: underline; }
 
 /* ── AWARDS ──────────────────────────────────── */
 #awards { background: var(--bg); }

@@ -34,17 +34,6 @@ function filterPubs(cat, btn) {
   document.getElementById('pubMoreWrap').style.display = cat === 'paper' ? 'block' : 'none';
 }
 
-// Talks toggle
-let talksExpanded = false;
-function toggleTalks() {
-  talksExpanded = !talksExpanded;
-  document.querySelectorAll('.talk-item').forEach(c => {
-    const rank = parseInt(c.dataset.rank);
-    c.classList.toggle('show', talksExpanded || rank <= 6);
-  });
-  document.getElementById('talkMoreBtn').textContent = talksExpanded ? 'Show fewer' : 'Show all talks';
-}
-
 // Nav active highlight
 const secs = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {

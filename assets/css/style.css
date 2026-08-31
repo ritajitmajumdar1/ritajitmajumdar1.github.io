@@ -224,8 +224,7 @@ section { padding: 72px 2rem; }
   padding: 0; text-decoration: underline;
 }
 
-/* ── PROJECTS / SIMPLE LISTS ─────────────────── */
-#projects { background: var(--bg); }
+/* ── SIMPLE LISTS ─────────────────────────────── */
 .simple-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
 .simple-item {
   padding: .75rem 0;

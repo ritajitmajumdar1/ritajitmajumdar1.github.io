@@ -16,7 +16,6 @@ assets/img/             Put profile.jpg here (see below)
 - **Hero** — name, title, affiliation(s), short bio, profile photo, contact links
 - **About** — education history
 - **Publications** — journal/conference tabs
-- **Projects** — ongoing/completed work
 - **Talks** — invited talks & presentations
 - **Teaching** — courses/roles
 - **Awards** — honors & recognition

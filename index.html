@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ritajit Majumdar</title>
+<meta name="description" content="Personal website of Ritajit Majumdar."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-wordmark" href="#hero">Ritajit Majumdar</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#talks">Talks</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#press">Press</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="assets/img/profile.jpg" alt="Ritajit Majumdar" onerror="this.parentElement.classList.add('no-photo')"/>
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">Ritajit Majumdar</h1>
+      <p class="hero-role">[Your title] &mdash; [Your affiliation]</p>
+      <p class="hero-role">[Second affiliation or role, if any]</p>
+
+      <div class="hero-affil">
+        <div class="affil-primary">
+          Research Interest: [One-line summary of what you work on]
+        </div>
+      </div>
+
+      <p class="hero-bio">
+        [Short bio &mdash; a few sentences about your background, education, current role, and research focus. This is placeholder text; replace it with your own summary.]
+      </p>
+
+      <div class="hero-cta">
+        <a href="#" target="_blank" class="btn btn-primary">Google Scholar</a>
+        <a href="#" target="_blank" class="btn btn-ghost">LinkedIn</a>
+        <a href="#" target="_blank" class="btn btn-ghost">GitHub</a>
+        <a href="mailto:you@example.com" class="btn btn-ghost">Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Education</div>
+      <h2 class="sec-title">Academic Background</h2>
+    </div>
+
+    <ul class="simple-list reveal" style="transition-delay:.08s">
+      <li class="simple-item">
+        <div class="item-title">[Degree] &mdash; [Field] &middot; [Institution]</div>
+        <div class="item-meta">
+          [Fellowship / advisor, if applicable] &nbsp;&middot;&nbsp;
+          Thesis: <em>[Thesis title]</em><br>
+          [Start date] &nbsp;&middot;&nbsp; [End date]
+        </div>
+      </li>
+      <li class="simple-item">
+        <div class="item-title">[Degree] &middot; [Institution]</div>
+        <div class="item-meta">
+          [Start date] &nbsp;&middot;&nbsp; [End date]
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Research</div>
+      <h2 class="sec-title">Publications</h2>
+    </div>
+
+    <div class="pub-tabs reveal" style="transition-delay:.06s">
+      <button class="pub-tab active" onclick="filterPubs('journal',this)">Journals</button>
+      <button class="pub-tab" onclick="filterPubs('conference',this)">Conference</button>
+    </div>
+
+    <div class="pub-list reveal" style="transition-delay:.1s" id="pubList">
+
+      <div class="pub-item show" data-cat="journal" data-year="2026" data-rank="1">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-arxiv">Venue</span>
+          <span class="pub-badge">Year</span>
+        </div>
+        <div class="pub-title">[Paper title]</div>
+        <div class="pub-authors"><strong>Majumdar, R.</strong>, Co-author, A.</div>
+        <div class="pub-meta">[Journal / arXiv ID / details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item show" data-cat="journal" data-year="2025" data-rank="2">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-ieee">Venue</span>
+          <span class="pub-badge">Year</span>
+        </div>
+        <div class="pub-title">[Paper title]</div>
+        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
+        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item show" data-cat="journal" data-year="2024" data-rank="3">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-nature">Venue</span>
+          <span class="pub-badge">Year</span>
+        </div>
+        <div class="pub-title">[Paper title]</div>
+        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
+        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="conference" data-year="2025">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-conf">Venue</span>
+          <span class="pub-badge">Location &middot; Year</span>
+        </div>
+        <div class="pub-title">[Paper title]</div>
+        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
+        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </div>
+
+    </div>
+
+    <div class="show-more-wrap reveal" id="pubMoreWrap" style="transition-delay:.15s">
+      <button class="btn-text" id="pubMoreBtn" onclick="togglePubMore()">Show all journal papers</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Work</div>
+      <h2 class="sec-title">Projects</h2>
+    </div>
+    <ul class="simple-list">
+
+      <li class="simple-item reveal">
+        <span class="item-status status-filed">Ongoing</span>
+        <span class="item-title">[Project name]</span>
+        <div class="item-meta">[One-line description] &nbsp;&middot;&nbsp; <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </li>
+
+      <li class="simple-item reveal">
+        <span class="item-status status-granted">Completed</span>
+        <span class="item-title">[Project name]</span>
+        <div class="item-meta">[One-line description] &nbsp;&middot;&nbsp; <a class="pub-link" href="#" target="_blank">[link]</a></div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- TALKS -->
+<section id="talks">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Outreach</div>
+      <h2 class="sec-title">Invited Talks &amp; Presentations</h2>
+    </div>
+
+    <div id="talksList">
+
+      <div class="talk-item show" data-rank="1">
+        <div class="talk-left">
+          <div class="talk-type">[Talk type]</div>
+          <div class="talk-title">[Talk title]</div>
+          <div class="talk-venue">[Event] &middot; [Venue]</div>
+        </div>
+        <div class="talk-date">[Month Year]</div>
+      </div>
+
+      <div class="talk-item show" data-rank="2">
+        <div class="talk-left">
+          <div class="talk-type">[Talk type]</div>
+          <div class="talk-title">[Talk title]</div>
+          <div class="talk-venue">[Event] &middot; [Venue]</div>
+        </div>
+        <div class="talk-date">[Month Year]</div>
+      </div>
+
+    </div>
+
+    <div class="show-more-wrap reveal" style="margin-top:.8rem">
+      <button class="btn-text" id="talkMoreBtn" onclick="toggleTalks()">Show all talks</button>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Education</div>
+      <h2 class="sec-title">Teaching</h2>
+    </div>
+
+    <ul class="simple-list reveal" style="transition-delay:.06s">
+      <li class="teach-item">
+        <div class="teach-head">
+          <span class="teach-title">[Course / role title]</span>
+          <span class="teach-period">[Period]</span>
+        </div>
+        <div class="teach-detail">[Institution / details]</div>
+      </li>
+      <li class="teach-item">
+        <div class="teach-head">
+          <span class="teach-title">[Course / role title]</span>
+          <span class="teach-period">[Period]</span>
+        </div>
+        <div class="teach-detail">[Institution / details]</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Recognition</div>
+      <h2 class="sec-title">Awards &amp; Honors</h2>
+    </div>
+
+    <div class="simple-list">
+      <div class="award-item reveal">
+        <div class="award-year">[Year] &middot; [Org]</div>
+        <div><div class="award-title">[Award title]</div><div class="award-org">[Details]</div></div>
+      </div>
+      <div class="award-item reveal">
+        <div class="award-year">[Year] &middot; [Org]</div>
+        <div><div class="award-title">[Award title]</div><div class="award-org">[Details]</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section id="press">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Media</div>
+      <h2 class="sec-title">Press</h2>
+    </div>
+    <div>
+      <a href="#" target="_blank" class="press-item reveal">
+        <div class="press-source">[Source]</div>
+        <div class="press-title">[Article title]</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Ritajit Majumdar</div>
+  <div class="footer-sub">[Your title] &middot; [Your affiliation]</div>
+  <div class="footer-links">
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">Google Scholar</a>
+    <a href="#" target="_blank">GitHub</a>
+    <a href="mailto:you@example.com">Email</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Ritajit Majumdar</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

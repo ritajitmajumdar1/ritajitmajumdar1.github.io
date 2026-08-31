@@ -84,65 +84,125 @@
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- PUBLICATIONS AND PATENTS -->
 <section id="publications">
   <div class="container">
     <div class="reveal">
       <div class="sec-label">Research</div>
-      <h2 class="sec-title">Publications</h2>
+      <h2 class="sec-title">Publications and Patents</h2>
     </div>
 
     <div class="pub-tabs reveal" style="transition-delay:.06s">
-      <button class="pub-tab active" onclick="filterPubs('journal',this)">Journals</button>
-      <button class="pub-tab" onclick="filterPubs('conference',this)">Conference</button>
+      <button class="pub-tab active" onclick="filterPubs('paper',this)">Papers</button>
+      <button class="pub-tab" onclick="filterPubs('patent',this)">Patents</button>
     </div>
 
     <div class="pub-list reveal" style="transition-delay:.1s" id="pubList">
 
-      <div class="pub-item show" data-cat="journal" data-year="2026" data-rank="1">
+      <div class="pub-item show" data-cat="paper">
         <div class="pub-venue-row">
-          <span class="pub-venue venue-arxiv">Venue</span>
-          <span class="pub-badge">Year</span>
+          <span class="pub-venue venue-nature">Journal</span>
+          <span class="pub-badge">2025</span>
         </div>
-        <div class="pub-title">[Paper title]</div>
-        <div class="pub-authors"><strong>Majumdar, R.</strong>, Co-author, A.</div>
-        <div class="pub-meta">[Journal / arXiv ID / details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+        <div class="pub-title">Krylov diagonalization of large many-body Hamiltonians on a quantum processor</div>
+        <div class="pub-authors">N. Yoshioka, M. Amico, W. Kirby, P. Jurcevic, <strong>R. Majumdar</strong>, et al.</div>
+        <div class="pub-meta">Nature Communications 16, 5014 &middot; 98 citations <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ikohpY4AAAAJ&citation_for_view=ikohpY4AAAAJ:RYcK_YlVTxYC" target="_blank">[link]</a></div>
       </div>
 
-      <div class="pub-item show" data-cat="journal" data-year="2025" data-rank="2">
+      <div class="pub-item show" data-cat="paper">
         <div class="pub-venue-row">
-          <span class="pub-venue venue-ieee">Venue</span>
-          <span class="pub-badge">Year</span>
+          <span class="pub-venue venue-conf">Conference</span>
+          <span class="pub-badge">2023</span>
         </div>
-        <div class="pub-title">[Paper title]</div>
-        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
-        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+        <div class="pub-title">Best Practices for Quantum Error Mitigation with Digital Zero-Noise Extrapolation</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, P. Rivero, F. Metz, A. Hasan, D. S. Wang</div>
+        <div class="pub-meta">IEEE International Conference on Quantum Computing and Engineering (QCE) &middot; 77 citations <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ikohpY4AAAAJ&citation_for_view=ikohpY4AAAAJ:_Qo2XoVZTnwC" target="_blank">[link]</a></div>
       </div>
 
-      <div class="pub-item show" data-cat="journal" data-year="2024" data-rank="3">
+      <div class="pub-item show" data-cat="paper">
         <div class="pub-venue-row">
-          <span class="pub-venue venue-nature">Venue</span>
-          <span class="pub-badge">Year</span>
+          <span class="pub-venue venue-ieee">Journal</span>
+          <span class="pub-badge">2022</span>
         </div>
-        <div class="pub-title">[Paper title]</div>
-        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
-        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+        <div class="pub-title">Search of Unstructured Databases using Qudit and Multi-Valued Quantum Logic</div>
+        <div class="pub-authors">A. Saha, <strong>R. Majumdar</strong>, D. Saha, A. Chakrabarti, S. Sur-Kolay</div>
+        <div class="pub-meta">Physical Review A 105, 062453 &middot; 48 citations <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ikohpY4AAAAJ&citation_for_view=ikohpY4AAAAJ:dhFuZR0502QC" target="_blank">[link]</a></div>
       </div>
 
-      <div class="pub-item" data-cat="conference" data-year="2025">
+      <div class="pub-item show" data-cat="paper">
         <div class="pub-venue-row">
-          <span class="pub-venue venue-conf">Venue</span>
-          <span class="pub-badge">Location &middot; Year</span>
+          <span class="pub-venue venue-arxiv">arXiv</span>
+          <span class="pub-badge">2021</span>
         </div>
-        <div class="pub-title">[Paper title]</div>
-        <div class="pub-authors"><strong>Majumdar, R.</strong></div>
-        <div class="pub-meta">[Details] <a class="pub-link" href="#" target="_blank">[link]</a></div>
+        <div class="pub-title">Optimizing Ansatz Design in QAOA for Max-Cut</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, D. Madan, D. Bhoumik, D. Vinayagamurthy, S. Raghunathan, et al.</div>
+        <div class="pub-meta">arXiv:2106.02812 &middot; 45 citations <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ikohpY4AAAAJ&citation_for_view=ikohpY4AAAAJ:_kc_bZDykSQC" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item show" data-cat="paper">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-ieee">Journal</span>
+          <span class="pub-badge">2018</span>
+        </div>
+        <div class="pub-title">Quantum Error-Correcting Code for Ternary Logic</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, S. Basu, S. Ghosh, S. Sur-Kolay</div>
+        <div class="pub-meta">Physical Review A 97, 052302 &middot; 38 citations <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ikohpY4AAAAJ&citation_for_view=ikohpY4AAAAJ:u5HHmVD_uO8C" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="patent">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-ieee">US Patent</span>
+          <span class="pub-badge">Granted &middot; 2025</span>
+        </div>
+        <div class="pub-title">Calibrating a Quantum Error Mitigation Technique</div>
+        <div class="pub-authors">D. S. Wang, <strong>R. Majumdar</strong>, P. Rivero Ramirez</div>
+        <div class="pub-meta">US 12,198,013 <a class="pub-link" href="https://patents.google.com/patent/US20250013907A1" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="patent">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-arxiv">US Patent App.</span>
+          <span class="pub-badge">Filed 2024</span>
+        </div>
+        <div class="pub-title">Quantum Error Mitigation for Probability Distributions</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, P. Rivero Ramirez, S. Majumder, Z. K. Minev</div>
+        <div class="pub-meta">US 2026/0099753 A1 <a class="pub-link" href="https://patents.google.com/patent/US20260099753A1" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="patent">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-arxiv">US Patent App.</span>
+          <span class="pub-badge">Filed 2024</span>
+        </div>
+        <div class="pub-title">Load-Adaptive Circuit Knitting in Quantum Computing Enabled Cloud Environments</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, A. Ray, P. V. Seshadri</div>
+        <div class="pub-meta">US 2025/0384198 A1 <a class="pub-link" href="https://patents.google.com/patent/US20250384198A1" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="patent">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-arxiv">US Patent App.</span>
+          <span class="pub-badge">Filed 2024</span>
+        </div>
+        <div class="pub-title">Learning-Based Quantum Experimental Setup Selection</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, A. Ray, I. Sitdikov, C. Johnson</div>
+        <div class="pub-meta">US 2025/0265484 A1 <a class="pub-link" href="https://patents.google.com/patent/US20250265484A1" target="_blank">[link]</a></div>
+      </div>
+
+      <div class="pub-item" data-cat="patent">
+        <div class="pub-venue-row">
+          <span class="pub-venue venue-arxiv">US Patent App.</span>
+          <span class="pub-badge">Filed 2023</span>
+        </div>
+        <div class="pub-title">Sparse Noise Tomography-Based Qubit Mapping</div>
+        <div class="pub-authors"><strong>R. Majumdar</strong>, B. Pokharel, Z. K. Minev, M. Amico</div>
+        <div class="pub-meta">US 2025/0165836 A1 <a class="pub-link" href="https://patents.google.com/patent/US20250165836A1" target="_blank">[link]</a></div>
       </div>
 
     </div>
 
     <div class="show-more-wrap reveal" id="pubMoreWrap" style="transition-delay:.15s">
-      <button class="btn-text" id="pubMoreBtn" onclick="togglePubMore()">Show all journal papers</button>
+      <a class="btn-text" href="https://scholar.google.com/citations?hl=en&user=ikohpY4AAAAJ" target="_blank" id="pubMoreBtn">+52 others on Google Scholar</a>
     </div>
   </div>
 </section>

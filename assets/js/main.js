@@ -19,50 +19,19 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
 });
 
-// Publications — tab filter + show/hide
-const INITIAL_SHOW_JOURNALS = 3;
-let pubsExpanded = false;
-let currentCat = 'journal';
+// Publications — tab filter
+let currentCat = 'paper';
 
 function filterPubs(cat, btn) {
   currentCat = cat;
-  pubsExpanded = false;
   document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
 
-  const allItems = document.querySelectorAll('#pubList .pub-item');
-  allItems.forEach(item => {
-    const cats = (item.dataset.cat || '').split(' ');
-    if(cats.includes(cat)) {
-      const rank = parseInt(item.dataset.rank || '99');
-      const show = cat === 'journal' ? rank <= INITIAL_SHOW_JOURNALS : true;
-      item.classList.toggle('show', show);
-    } else {
-      item.classList.remove('show');
-    }
+  document.querySelectorAll('#pubList .pub-item').forEach(item => {
+    item.classList.toggle('show', item.dataset.cat === cat);
   });
 
-  const wrap = document.getElementById('pubMoreWrap');
-  const total = Array.from(allItems).filter(i => (i.dataset.cat||'').split(' ').includes(cat)).length;
-  wrap.style.display = (cat === 'journal' && total > INITIAL_SHOW_JOURNALS) ? 'block' : 'none';
-  document.getElementById('pubMoreBtn').textContent = `Show all journal papers (${total} total)`;
-}
-
-function togglePubMore() {
-  pubsExpanded = !pubsExpanded;
-  const allItems = document.querySelectorAll('#pubList .pub-item');
-  allItems.forEach(item => {
-    const cats = (item.dataset.cat || '').split(' ');
-    if(cats.includes(currentCat)) {
-      if(pubsExpanded) {
-        item.classList.add('show');
-      } else {
-        const rank = parseInt(item.dataset.rank || '99');
-        item.classList.toggle('show', rank <= INITIAL_SHOW_JOURNALS);
-      }
-    }
-  });
-  document.getElementById('pubMoreBtn').textContent = pubsExpanded ? 'Show fewer' : `Show all journal papers`;
+  document.getElementById('pubMoreWrap').style.display = cat === 'paper' ? 'block' : 'none';
 }
 
 // Talks toggle
@@ -88,5 +57,5 @@ window.addEventListener('scroll', () => {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
-  filterPubs('journal', document.querySelector('.pub-tab'));
+  filterPubs('paper', document.querySelector('.pub-tab'));
 });

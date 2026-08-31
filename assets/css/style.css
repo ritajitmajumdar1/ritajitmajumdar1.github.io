@@ -262,6 +262,7 @@ section { padding: 72px 2rem; }
 
 /* ── TEACHING ────────────────────────────────── */
 #teaching { background: var(--bg); }
+#mentorship { background: var(--bg-alt); }
 .teach-item {
   padding: .75rem 0;
   border-bottom: 1px solid var(--rule);
@@ -283,7 +284,7 @@ section { padding: 72px 2rem; }
 }
 
 /* ── AWARDS ──────────────────────────────────── */
-#awards { background: var(--bg-alt); }
+#awards { background: var(--bg); }
 .award-item {
   padding: .7rem 0;
   border-bottom: 1px solid var(--rule);
@@ -296,7 +297,7 @@ section { padding: 72px 2rem; }
 .award-org  { font-size: .85rem; color: var(--ink-light); }
 
 /* ── PRESS ───────────────────────────────────── */
-#press { background: var(--bg); }
+#press { background: var(--bg-alt); }
 .press-item {
   padding: .7rem 0;
   border-bottom: 1px solid var(--rule);

@@ -38,6 +38,17 @@ function toggleTalks() {
   document.getElementById('talkMoreBtn').textContent = talksExpanded ? 'Show fewer' : 'See all talks';
 }
 
+// Tutorials toggle
+let tutorialsExpanded = false;
+function toggleTutorials() {
+  tutorialsExpanded = !tutorialsExpanded;
+  document.querySelectorAll('.tutorial-item').forEach(c => {
+    const rank = parseInt(c.dataset.rank);
+    c.classList.toggle('show', tutorialsExpanded || rank <= 5);
+  });
+  document.getElementById('tutorialMoreBtn').textContent = tutorialsExpanded ? 'Show fewer' : 'See all tutorials';
+}
+
 // Nav active highlight
 const secs = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {

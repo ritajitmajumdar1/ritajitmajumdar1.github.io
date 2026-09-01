@@ -146,7 +146,8 @@ nav {
   margin-right: .5rem;
   white-space: nowrap;
 }
-.hero-cta { display: flex; gap: .75rem; flex-wrap: wrap; }
+.hero-cta { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
+.hero-email { font-size: .87rem; color: var(--ink-light); }
 .btn {
   padding: .45rem 1.1rem;
   font-family: 'Source Sans 3', sans-serif;
@@ -385,6 +386,7 @@ footer {
 .footer-links { display: flex; justify-content: center; gap: 1.6rem; flex-wrap: wrap; margin-bottom: .8rem; }
 .footer-links a { font-size: .82rem; color: var(--accent); text-decoration: none; }
 .footer-links a:hover { text-decoration: underline; }
+.footer-email { font-size: .82rem; color: var(--ink-light); }
 .footer-copy { font-size: .73rem; color: var(--ink-faint); }
 
 /* ── REVEAL ──────────────────────────────────── */

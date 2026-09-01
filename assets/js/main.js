@@ -1,10 +1,3 @@
-// Email — assembled at runtime to deter scrapers
-document.querySelectorAll('.js-email').forEach(el => {
-  const addr = `${el.dataset.user}@${el.dataset.domain}`;
-  el.href = `mailto:${addr}`;
-  el.textContent = 'Email';
-});
-
 // Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });

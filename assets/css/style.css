@@ -299,6 +299,7 @@ section { padding: 72px 2rem; }
   margin-right: .3rem; margin-bottom: .4rem; display: inline-block;
 }
 .tag-qem { background: #fdecea; color: #c0392b; }
+.tag-alg { background: #e8daef; color: #6c3483; }
 .lec-title { font-weight: 600; color: var(--ink); line-height: 1.45; margin-bottom: .15rem; }
 .lec-link { font-size: .78rem; color: var(--accent); text-decoration: none; font-weight: 600; }
 .lec-link:hover { text-decoration: underline; }

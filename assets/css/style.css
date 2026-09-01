@@ -103,7 +103,7 @@ nav {
 }
 .hero-role {
   font-size: 1rem; color: var(--ink-mid); font-weight: 400;
-  margin-bottom: 1.8rem;
+  margin-bottom: .3rem;
 }
 .hero-affil {
   margin-bottom: 1.6rem;
@@ -147,7 +147,7 @@ nav {
   white-space: nowrap;
 }
 .hero-cta { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
-.hero-email { font-size: .87rem; color: var(--ink-light); }
+.hero-email-line { font-size: .88rem; color: var(--ink-light); margin-bottom: 1.6rem; }
 .btn {
   padding: .45rem 1.1rem;
   font-family: 'Source Sans 3', sans-serif;

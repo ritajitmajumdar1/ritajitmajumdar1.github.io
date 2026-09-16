@@ -329,6 +329,7 @@ section { padding: 72px 2rem; }
 .tag-qem { background: #fdecea; color: #c0392b; }
 .tag-alg { background: #e8daef; color: #6c3483; }
 .tag-ent { background: #d5f5e3; color: #1e8449; }
+.tag-fund { background: #fef9e7; color: #7d6608; }
 .lec-title { font-weight: 600; color: var(--ink); line-height: 1.45; margin-bottom: .15rem; }
 .lec-link { font-size: .78rem; color: var(--accent); text-decoration: none; font-weight: 600; }
 .lec-link:hover { text-decoration: underline; }

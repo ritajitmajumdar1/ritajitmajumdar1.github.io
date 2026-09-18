@@ -390,6 +390,8 @@ footer {
 .footer-links a:hover { text-decoration: underline; }
 .footer-email { font-size: .82rem; color: var(--ink-light); }
 .footer-copy { font-size: .73rem; color: var(--ink-faint); }
+.footer-visits { margin-top: .6rem; opacity: .6; }
+.footer-visits img { height: 18px; vertical-align: middle; }
 
 /* ── REVEAL ──────────────────────────────────── */
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .55s ease, transform .55s ease; }
